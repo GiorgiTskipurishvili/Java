@@ -1,29 +1,34 @@
-public class ClassA {
+public class ClassA implements ClassInterfaceA{
     //1)განსაზღვრეთ კლასი A: ორი მთელი ტიპის ცვლადით a=10, b=29;
     int a=10;
     int b=29;
 
+    @Override
     //მეთოდი 1:  ბეჭდავს “Hello OPP”;
     public void Methodi1(){
         System.out.println("Hello OPP");
     }
 
+    @Override
     //მეთოდი 2:  ბეჭდავს a ცვლადის მნიშვნელობას;
     public void Methodi2(){
         System.out.println("a "+a);
     }
 
+    @Override
     //მეთოდი 3:  ბეჭდავს b ცვლადის მნიშვნელობას;
     public void Methodi3(){
         System.out.println("b " + b);
     }
 
+    @Override
     //მეთოდი 4:  ბეჭდავს a და b ცვლადების ჯამს;
     public void Methodi4(){
         int sum =a+b;
         System.out.println("a+b = " + sum);
     }
 
+    @Override
     //მეთოდი 5:  აბრუნებს a და b ცვლადების ჯამს;
     public int Methodi5(){
         return a+b;
